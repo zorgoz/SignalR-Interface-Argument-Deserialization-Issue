@@ -36,5 +36,6 @@ catch (Exception ex)
 }
 finally
 {
+    await connection.StopAsync();
     await app.StopAsync();
 }
